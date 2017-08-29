@@ -1,6 +1,5 @@
 
 var yoff=0;
-var q=0;
 var z=1000;
 function setup(){
 		createCanvas(displayWidth,displayHeight/2);
@@ -9,17 +8,15 @@ function setup(){
 }
 function draw(){
 	translate(width/4,height/2);
-	/*do{
+
 	var a=random(0,255);
 	var b=random(0,255);
 	var c=random(0,255);
-	}while(q>=z);*/
 	rotate(PI/2);
 	background(0);
 	stroke(225);
 	strokeWeight(3);
-	//fill(a,b,c);
-	fill(11, 206, 232);
+	fill(a,b,c);
 	beginShape();
 	var xoff =0;
 	dx=0.02;
