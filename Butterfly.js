@@ -1,6 +1,7 @@
 
 var yoff=0;
-var z=1000;
+var q=1;
+var z=1;
 function setup(){
 		createCanvas(displayWidth,displayHeight/2);
 		frameRate(15);
@@ -8,10 +9,13 @@ function setup(){
 }
 function draw(){
 	translate(width/4,height/2);
-
-	var a=random(0,255);
-	var b=random(0,255);
-	var c=random(0,255);
+	if(q==z){
+		var a=random(0,255);
+		var b=random(0,255);
+		var c=random(0,255);
+		z=z+90;
+	}
+	q++;
 	rotate(PI/2);
 	background(0);
 	stroke(225);
