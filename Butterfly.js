@@ -20,7 +20,6 @@ function draw(){
 	background(0);
 	stroke(225);
 	strokeWeight(3);
-	fill(a,b,c);
 	beginShape();
 	var xoff =0;
 	dx=0.02;
@@ -34,7 +33,7 @@ function draw(){
 		xoff+=dx;
 		vertex(x,y);
 	
-	}
+	}fill(a,b,c,1000);
 	for(var a=PI/2;a<= (3*PI)/2;a+=PI/100){
 		var n=noise(xoff,yoff);
 		var r=sin(a*2)*map(n,0,1,100,300);
